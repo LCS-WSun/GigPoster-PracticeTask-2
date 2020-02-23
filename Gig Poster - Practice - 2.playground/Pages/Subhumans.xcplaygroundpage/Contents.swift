@@ -34,6 +34,12 @@ let lightRed = Color(hue: 10, saturation: 80, brightness: 80, alpha: 75)
 
 // Begin your solution here...
 
+canvas.fillColor = yellow 
+
+//draw a yellow rectangle
+
+canvas.drawRectangle(at: Point(x: 0, y: 0), width: 400, height: 600)
+
 
 /*:
  ## Use Source Control
