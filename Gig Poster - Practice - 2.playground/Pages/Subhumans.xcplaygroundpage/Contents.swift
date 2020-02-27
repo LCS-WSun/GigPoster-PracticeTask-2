@@ -10,7 +10,7 @@ import PlaygroundSupport
  
  ![subhumans-no-grid](subhumans-no-grid.png "Subhumans")
  ![subhumans-with-grid](subhumans-with-grid.png "Subhumans")
-
+ 
  By precisely reproducing this image, you will demonstrate your understanding of:
  
  * sequence (order of statements in a program)
@@ -43,15 +43,27 @@ canvas.drawRectangle(at: Point(x: 0, y: 0), width: 400, height: 600)
 
 
 //Draw a parralelogram
+canvas.fillColor = purple
+canvas.drawShapesWithBorders = false
+
+canvas.drawShapesWithFill = true
+
+for x in stride(from: 25, through: 25 + 2 * 165, by: 165) {
+    
+    var vertices : [Point] = [] // empty array
+    vertices.append(Point(x: x, y: 50))    // 1
+    vertices.append(Point(x: x + 50, y: 150))   // 2
+    vertices.append(Point(x: x + 200, y: 150))  // 3
+    vertices.append(Point(x: x + 150, y: 50))   // 4
+    canvas.drawCustomShape(with: vertices)
+    
+}
 
 
 
-var vertices : [Point] = [] // empty array
-vertices.append(Point(x: 20, y: 50))
-vertices.append(Point(x: 160, y: 50))
-vertices.append(Point(x: 220, y: 150))
-vertices.append(Point(x: 60, y: 150))
-canvas.drawCustomShape(with: vertices)
+
+
+
 
 //The logic and how to go about it
 
@@ -67,6 +79,11 @@ canvas.drawCustomShape(with: vertices)
 // I think (x: 15, and y is
 
 
+//Then once you know the first shape (estimated, you would then with each individual point add blah blah to get the right point and the 4 points make the parralelgoram
+
+
+
+
 
 
 
@@ -76,13 +93,16 @@ canvas.drawText(message: "subhumans", at: Point(x: 20, y: 345), size: 50, kernin
 //Drawing each line out using a stride function
 
 
+
+
+
 /*:
  ## Use Source Control
  
  As this is a practice task, there is no hard deadline. However, completing this practice task – an assessment for learning – prior to attempting an assessment of learning – is strongly recommended.
  
  Be sure to commit your work multiple times as you make progress on completing this task.
-
+ 
  ## Template code
  The code below is necessary to see results in the Assistant Editor at right. Please do not remove.
  */
