@@ -48,6 +48,8 @@ canvas.drawShapesWithBorders = false
 
 canvas.drawShapesWithFill = true
 
+
+
 for x in stride(from: 25, through: 25 + 2 * 165, by: 165) {
     
     var vertices : [Point] = [] // empty array
@@ -94,6 +96,13 @@ canvas.drawText(message: "subhumans", at: Point(x: 20, y: 345), size: 50, kernin
 
 
 
+//Draw horizontal lines in grid
+
+for x in stride(from: 0, through: 400, by: 50) {
+    
+    canvas.drawLine(from: Point(x: x, y: 0), to: Point(x: x, y: 600))
+    
+}
 
 
 /*:
