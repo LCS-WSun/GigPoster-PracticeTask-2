@@ -48,18 +48,22 @@ canvas.drawShapesWithBorders = false
 
 canvas.drawShapesWithFill = true
 
-
-
-for x in stride(from: 25, through: 25 + 2 * 165, by: 165) {
+for verticalPosition in stride(from: 50, through: 225, by: 175) {
     
-    var vertices : [Point] = [] // empty array
-    vertices.append(Point(x: x, y: 50))    // 1
-    vertices.append(Point(x: x + 50, y: 150))   // 2
-    vertices.append(Point(x: x + 200, y: 150))  // 3
-    vertices.append(Point(x: x + 150, y: 50))   // 4
-    canvas.drawCustomShape(with: vertices)
+    for horizontalPosition in stride(from: 25, through: 25 + 2 * 165, by: 165) {
+        
+        var vertices : [Point] = [] // empty array
+        vertices.append(Point(x: horizontalPosition, y: verticalPosition))     // 1
+        vertices.append(Point(x: horizontalPosition + 50, y: verticalPosition + 100))   // 2
+        vertices.append(Point(x: horizontalPosition + 200, y: verticalPosition + 100))  // 3
+        vertices.append(Point(x: horizontalPosition + 150, y: verticalPosition))   // 4
+        canvas.drawCustomShape(with: vertices)
+        
+    }
     
 }
+
+
 
 
 
