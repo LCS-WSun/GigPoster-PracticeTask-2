@@ -46,6 +46,12 @@ canvas.drawRectangle(at: Point(x: 0, y: 0), width: 400, height: 600)
 
 
 
+var vertices : [Point] = [] // empty array
+vertices.append(Point(x: 20, y: 50))
+vertices.append(Point(x: 160, y: 50))
+vertices.append(Point(x: 220, y: 150))
+vertices.append(Point(x: 60, y: 150))
+canvas.drawCustomShape(with: vertices)
 
 //The logic and how to go about it
 
@@ -54,12 +60,20 @@ canvas.drawRectangle(at: Point(x: 0, y: 0), width: 400, height: 600)
 
 //THE SHAPES
 //I see that there is 12 parallelograms
+//Each shape is translated so you can shift it somehow
 
-//
+//Or.... I would create the shapes on the positions individually (not a stride function)
+
+// I think (x: 15, and y is
+
+
+
 
 
 // Drawing the SUBHUMANS text
 canvas.drawText(message: "subhumans", at: Point(x: 20, y: 345), size: 50, kerning: 0.0)
+
+//Drawing each line out using a stride function
 
 
 /*:
