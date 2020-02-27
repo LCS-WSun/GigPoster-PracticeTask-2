@@ -32,13 +32,34 @@ let purple = Color(hue: 304, saturation: 40, brightness: 64, alpha: 100)
 let brown = Color(hue: 38, saturation: 99, brightness: 38, alpha: 100)
 let lightRed = Color(hue: 10, saturation: 80, brightness: 80, alpha: 75)
 
+
 // Begin your solution here...
 
-canvas.fillColor = yellow 
+canvas.fillColor = yellow
 
-//draw a yellow rectangle
+//draw a yellow rectangle that is the background
 
 canvas.drawRectangle(at: Point(x: 0, y: 0), width: 400, height: 600)
+
+
+//Draw a parralelogram
+
+
+
+
+//The logic and how to go about it
+
+
+
+
+//THE SHAPES
+//I see that there is 12 parallelograms
+
+//
+
+
+// Drawing the SUBHUMANS text
+canvas.drawText(message: "subhumans", at: Point(x: 20, y: 345), size: 50, kerning: 0.0)
 
 
 /*:
