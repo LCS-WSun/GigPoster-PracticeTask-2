@@ -48,9 +48,30 @@ canvas.drawShapesWithBorders = false
 
 canvas.drawShapesWithFill = true
 
+
 for verticalPosition in stride(from: 50, through: 225, by: 175) {
     
-    for horizontalPosition in stride(from: 25, through: 25 + 2 * 165, by: 165) {
+for horizontalPosition in stride(from: 25, through: 25 + 2 * 162, by: 162) {
+        
+        var vertices : [Point] = [] // empty array
+        vertices.append(Point(x: horizontalPosition, y: verticalPosition))     // 1
+        vertices.append(Point(x: horizontalPosition + 50, y: verticalPosition + 100))   // 2
+        vertices.append(Point(x: horizontalPosition + 200, y: verticalPosition + 100))  // 3
+        vertices.append(Point(x: horizontalPosition + 150, y: verticalPosition))   // 4
+        canvas.drawCustomShape(with: vertices)
+        
+    }
+    
+}
+
+//Making the new stride function for the top row
+canvas.fillColor = lightRed
+
+//The red row of parralelograms
+
+for verticalPosition in stride(from: 137, through: 137, by: 175) {
+    
+for horizontalPosition in stride(from: 25, through: 25 + 2 * 162, by: 162) {
         
         var vertices : [Point] = [] // empty array
         vertices.append(Point(x: horizontalPosition, y: verticalPosition))     // 1
@@ -70,10 +91,7 @@ for verticalPosition in stride(from: 50, through: 225, by: 175) {
 
 
 
-
 //The logic and how to go about it
-
-
 
 
 //THE SHAPES
@@ -95,6 +113,7 @@ for verticalPosition in stride(from: 50, through: 225, by: 175) {
 
 // Drawing the SUBHUMANS text
 canvas.drawText(message: "subhumans", at: Point(x: 20, y: 345), size: 50, kerning: 0.0)
+
 
 //Drawing each line out using a stride function
 
