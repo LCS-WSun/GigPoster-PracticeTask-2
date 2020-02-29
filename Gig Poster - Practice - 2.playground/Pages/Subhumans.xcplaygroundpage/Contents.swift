@@ -71,7 +71,7 @@ canvas.fillColor = lightRed
 
 for verticalPosition in stride(from: 137, through: 137, by: 175) {
     
-for horizontalPosition in stride(from: 25, through: 25 + 2 * 162, by: 162) {
+for horizontalPosition in stride(from: -137, through: 25 + 2 * 162, by: 162) {
         
         var vertices : [Point] = [] // empty array
         vertices.append(Point(x: horizontalPosition, y: verticalPosition))     // 1
