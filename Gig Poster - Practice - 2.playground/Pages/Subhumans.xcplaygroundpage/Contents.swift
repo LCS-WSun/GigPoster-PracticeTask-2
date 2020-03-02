@@ -43,7 +43,7 @@ canvas.drawRectangle(at: Point(x: 0, y: 0), width: 400, height: 600)
 
 
 //Draw a parralelogram
-canvas.fillColor = purple
+//canvas.fillColor = purple
 canvas.drawShapesWithBorders = false
 
 canvas.drawShapesWithFill = true
@@ -61,11 +61,24 @@ for horizontalPosition in stride(from: -140, through: 20 + 3 * 160, by: 160) {
     
         //Might be 20? not 25
     
-    
         var vertices : [Point] = [] // empty array
+    
+    canvas.fillColor = brown
+    
         vertices.append(Point(x: horizontalPosition, y: verticalPosition))     // 1 might be 20
+    
+    canvas.fillColor = purple
+    
         vertices.append(Point(x: horizontalPosition + 50, y: verticalPosition + 100))   // 2 (it might not be 75? maybe 70
+    
+    canvas.fillColor = brown
+    
         vertices.append(Point(x: horizontalPosition + 200, y: verticalPosition + 100))  // 3 (maybe not 225?) 220
+    
+    
+    canvas.fillColor = purple
+    
+    
         vertices.append(Point(x: horizontalPosition + 150, y: verticalPosition))   // 4 ( not 175) maybe 170
         canvas.drawCustomShape(with: vertices)
         
