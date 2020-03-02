@@ -51,13 +51,16 @@ canvas.drawShapesWithFill = true
 
 for verticalPosition in stride(from: 50, through: 225, by: 175) {
     
-for horizontalPosition in stride(from: -137, through: 25 + 2 * 162, by: 162) {
-        
+for horizontalPosition in stride(from: -150, through: 20 + 2 * 162, by: 162) {
+        //Might be 20? not 25
+    
+    
+    
         var vertices : [Point] = [] // empty array
-        vertices.append(Point(x: horizontalPosition, y: verticalPosition))     // 1
-        vertices.append(Point(x: horizontalPosition + 50, y: verticalPosition + 100))   // 2
-        vertices.append(Point(x: horizontalPosition + 200, y: verticalPosition + 100))  // 3
-        vertices.append(Point(x: horizontalPosition + 150, y: verticalPosition))   // 4
+        vertices.append(Point(x: horizontalPosition, y: verticalPosition))     // 1 might be 20
+        vertices.append(Point(x: horizontalPosition + 50, y: verticalPosition + 100))   // 2 (it might not be 75? maybe 70
+        vertices.append(Point(x: horizontalPosition + 200, y: verticalPosition + 100))  // 3 (maybe not 225?) 220
+        vertices.append(Point(x: horizontalPosition + 150, y: verticalPosition))   // 4 ( not 175) maybe 170
         canvas.drawCustomShape(with: vertices)
         
     }
@@ -105,6 +108,14 @@ for horizontalPosition in stride(from: -137, through: 25 + 2 * 162, by: 162) {
 
 //Then once you know the first shape (estimated, you would then with each individual point add blah blah to get the right point and the 4 points make the parralelgoram
 
+//Old logic
+
+
+
+
+//New problem
+// I am unsure if the spacing between each in correct so I need to tweak and also the positions of the parallegrams of the purple might be wrong
+//I am not sure how but maybe the size of them is slightly off 
 
 
 
