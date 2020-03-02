@@ -62,7 +62,7 @@ for horizontalPosition in stride(from: -140, through: 20 + 3 * 160, by: 160) {
         //Might be 20? not 25
     
         var vertices : [Point] = [] // empty array
-    
+    7
     canvas.fillColor = brown
     
         vertices.append(Point(x: horizontalPosition, y: verticalPosition))     // 1 might be 20
@@ -113,31 +113,6 @@ for horizontalPosition in stride(from: -140, through: 20 + 3 * 160, by: 160) {
 
 
 
-//The logic and how to go about it
-
-
-//THE SHAPES
-//I see that there is 12 parallelograms
-//Each shape is translated so you can shift it somehow
-
-//Or.... I would create the shapes on the positions individually (not a stride function)
-
-// I think (x: 15, and y is
-
-
-//Then once you know the first shape (estimated, you would then with each individual point add blah blah to get the right point and the 4 points make the parralelgoram
-
-//Old logic
-
-
-
-
-//New problem
-// I am unsure if the spacing between each in correct so I need to tweak and also the positions of the parallegrams of the purple might be wrong
-//I am not sure how but maybe the size of them is slightly off 
-
-
-
 
 
 
@@ -156,6 +131,49 @@ for x in stride(from: 0, through: 400, by: 50) {
     canvas.drawLine(from: Point(x: x, y: 0), to: Point(x: x, y: 600))
     
 }
+
+
+//All of the logic and what I have done so far
+// at first you make the parralelgram with the points and we started with 25
+// you then make it by guessing the x and y values of the four sides
+//After you make a stride function and start with the anchor point
+//You then use that anchor point to find the other points still keeping the y values the same
+// For example the x stride point is 25 so the next point we guessed is 75 so add 50
+//Once you have that you then give a guess of the spacing which I will tinker later such as 75 of the spacing so from the anchor point add 225
+// from 25, the origin point, through 225 because that is the length from one anchor to the other and by 225 because that is the distance
+// After that you found out the x and y values so you find out the vase number which we guessed is 50 so then you use 50 + whatever to get you the next number on the parralelogram
+//The x and y are pretty much similar so you follow the sort of same formatting of the horizontal stride function
+
+//The red parralelogram
+//pretty much can copy and paste the code from before since there is no alteration but change the anchor point of the red since it is different
+
+//You use a estimated - value to get you the 4 parallelogram so the one off the background and we said 25 - 225 which is the length of one anchor to one which gives -200 which is a guess
+
+//I then tweak my values here and there and soon got to relatively close identical image
+
+
+
+//Next steps
+//Getting the color of the parralelogram brown
+// Stride function? from blah blah change brown
+
+
+// Adjusting the subhumans word
+
+//making a stride function for all 3 rows and making the little text
+
+
+//DONE
+
+
+
+
+
+
+
+
+
+
 
 
 /*:
