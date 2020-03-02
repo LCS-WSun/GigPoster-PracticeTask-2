@@ -43,7 +43,9 @@ canvas.drawRectangle(at: Point(x: 0, y: 0), width: 400, height: 600)
 
 
 //Draw a parralelogram
-//canvas.fillColor = purple
+
+canvas.fillColor = purple
+
 canvas.drawShapesWithBorders = false
 
 canvas.drawShapesWithFill = true
@@ -62,21 +64,12 @@ for horizontalPosition in stride(from: -140, through: 20 + 3 * 160, by: 160) {
         //Might be 20? not 25
     
         var vertices : [Point] = [] // empty array
-    7
-    canvas.fillColor = brown
     
         vertices.append(Point(x: horizontalPosition, y: verticalPosition))     // 1 might be 20
     
-    canvas.fillColor = purple
-    
         vertices.append(Point(x: horizontalPosition + 50, y: verticalPosition + 100))   // 2 (it might not be 75? maybe 70
     
-    canvas.fillColor = brown
-    
         vertices.append(Point(x: horizontalPosition + 200, y: verticalPosition + 100))  // 3 (maybe not 225?) 220
-    
-    
-    canvas.fillColor = purple
     
     
         vertices.append(Point(x: horizontalPosition + 150, y: verticalPosition))   // 4 ( not 175) maybe 170
@@ -85,6 +78,29 @@ for horizontalPosition in stride(from: -140, through: 20 + 3 * 160, by: 160) {
     }
     
 }
+
+//Getting the color?
+
+//if parallelogram is at this point, it becomes purple
+//else it is brown
+
+// Trying something like that
+
+
+
+//if paralelogram at (these certain point) - it will be purple
+
+//else
+//the parallelogram will be brown
+
+//Could be the opposite way too
+
+
+//Repeat this again for the top row aswell
+
+
+
+
 
 //Making the new stride function for the top row
 canvas.fillColor = lightRed
@@ -108,19 +124,16 @@ for horizontalPosition in stride(from: -140, through: 20 + 3 * 160, by: 160) {
 
 
 
-
-
-
-
-
-
-
-
 // Drawing the SUBHUMANS text
-canvas.drawText(message: "subhumans", at: Point(x: 20, y: 345), size: 50, kerning: 0.0)
+canvas.drawText(message: "subhumans", at: Point(x: 20, y: 323), size: 50, kerning: 0.0)
 
 
 //Drawing each line out using a stride function
+
+
+
+
+
 
 
 
@@ -164,6 +177,8 @@ for x in stride(from: 0, through: 400, by: 50) {
 
 
 //DONE
+
+
 
 
 
