@@ -51,9 +51,15 @@ canvas.drawShapesWithFill = true
 
 for verticalPosition in stride(from: 50, through: 225, by: 175) {
     
-for horizontalPosition in stride(from: -150, through: 20 + 2 * 162, by: 162) {
-        //Might be 20? not 25
+for horizontalPosition in stride(from: -140, through: 20 + 3 * 160, by: 160) {
     
+    //from -140 seems right to me
+    
+    
+    // spacing between used to be 162 but I think is 161 or 160
+    
+    
+        //Might be 20? not 25
     
     
         var vertices : [Point] = [] // empty array
@@ -72,14 +78,14 @@ canvas.fillColor = lightRed
 
 //The red row of parralelograms
 
-for verticalPosition in stride(from: 137, through: 137, by: 175) {
+for verticalPosition in stride(from: 137, through: 140, by: 175) {
     
-for horizontalPosition in stride(from: -137, through: 25 + 2 * 162, by: 162) {
+for horizontalPosition in stride(from: -140, through: 20 + 3 * 160, by: 160) {
         
         var vertices : [Point] = [] // empty array
         vertices.append(Point(x: horizontalPosition, y: verticalPosition))     // 1
         vertices.append(Point(x: horizontalPosition + 50, y: verticalPosition + 100))   // 2
-        vertices.append(Point(x: horizontalPosition + 200, y: verticalPosition + 100))  // 3
+       vertices.append(Point(x: horizontalPosition + 200, y: verticalPosition + 100))  // 3
         vertices.append(Point(x: horizontalPosition + 150, y: verticalPosition))   // 4
         canvas.drawCustomShape(with: vertices)
         
