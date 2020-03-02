@@ -128,7 +128,24 @@ for horizontalPosition in stride(from: -140, through: 20 + 3 * 160, by: 160) {
 canvas.drawText(message: "subhumans", at: Point(x: 20, y: 323), size: 50, kerning: 0.0)
 
 
+
 //Drawing each line out using a stride function
+
+
+//for rowOne in stride(from: 25, through: 350, by 50, kerning: 0.0) {
+    
+    //var vertices : [Point] = []
+   // vertices.append(Point(x: rowOne, y: <#T##Int#>))
+
+
+   // }
+
+
+//Drawing out each text individually
+
+canvas.drawText(message: "friday, april 13 1984", at: Point(x: 20, y: 430), size: 10, kerning: 0.0)
+
+
 
 
 
