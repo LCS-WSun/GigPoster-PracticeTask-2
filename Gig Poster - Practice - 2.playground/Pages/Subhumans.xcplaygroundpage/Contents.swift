@@ -56,6 +56,15 @@ for verticalPosition in stride(from: 50, through: 225, by: 175) {
 for horizontalPosition in stride(from: -140, through: 20 + 3 * 160, by: 160) {
     
     //from -140 seems right to me
+    horizontalPosition
+    
+    if horizontalPosition == -140 || horizontalPosition == 180
+    {
+        canvas.fillColor = brown
+    }
+    else {
+        canvas.fillColor = purple
+    }
     
     
     // spacing between used to be 162 but I think is 161 or 160
@@ -143,7 +152,7 @@ canvas.drawText(message: "subhumans", at: Point(x: 20, y: 323), size: 50, kernin
 
 //Drawing out each text individually
 
-canvas.drawText(message: "friday, april 13 1984", at: Point(x: 20, y: 430), size: 10, kerning: 0.0)
+canvas.drawText(message: "friday, april 13 1984", at: Point(x: 20, y: 430), size: 12, kerning: 0.0)
 
 
 
