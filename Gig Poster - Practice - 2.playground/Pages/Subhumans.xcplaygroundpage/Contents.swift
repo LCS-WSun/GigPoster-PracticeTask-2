@@ -134,7 +134,7 @@ for horizontalPosition in stride(from: -140, through: 20 + 3 * 160, by: 160) {
 
 
 // Drawing the SUBHUMANS text
-canvas.drawText(message: "subhumans", at: Point(x: 20, y: 323), size: 50, kerning: 0.0)
+canvas.drawText(message: "subhumans", at: Point(x: 10, y: 323), size: 51, kerning: 0.0)
 
 
 
@@ -152,24 +152,39 @@ canvas.drawText(message: "subhumans", at: Point(x: 20, y: 323), size: 50, kernin
 
 //Drawing out each text individually
 
-canvas.drawText(message: "friday, april 13 1984", at: Point(x: 20, y: 430), size: 12, kerning: 0.0)
+//First row
+canvas.drawText(message: "friday, april 13 1984", at: Point(x: 12, y: 430), size: 10, kerning: 0.0)
+
+canvas.drawText(message: "advance $6.50, door $7.50", at: Point(x: 12, y: 415), size: 10, kerning: 0.0)
+
+canvas.drawText(message: "no age limit", at: Point(x: 12, y: 400), size: 10, kerning: 0.0)
 
 
 
+//Second row
+canvas.drawText(message: "at olympic auditorium", at: Point(x: 150, y: 430), size: 10, kerning: 0.0)
+
+canvas.drawText(message: "1801 s. grand ave.", at: Point(x: 150, y: 415), size: 10, kerning: 0.0)
+
+canvas.drawText(message: "los angeles, california", at: Point(x: 150, y: 400), size: 10, kerning: 0.0)
 
 
 
+// Third Row
+canvas.drawText(message: "with the tourists", at: Point(x: 270, y: 430), size: 10, kerning: 0.0)
 
+canvas.drawText(message: "multi death corporations", at: Point(x: 270, y: 415), size: 10, kerning: 0.0)
 
+canvas.drawText(message: "new regime & red scare ", at: Point(x: 270, y: 400), size: 10, kerning: 0.0)
 
 
 //Draw horizontal lines in grid
 
-for x in stride(from: 0, through: 400, by: 50) {
+//for x in stride(from: 0, through: 400, by: 50) {
     
-    canvas.drawLine(from: Point(x: x, y: 0), to: Point(x: x, y: 600))
+    //canvas.drawLine(from: Point(x: x, y: 0), to: Point(x: x, y: 600))
     
-}
+//{
 
 
 //All of the logic and what I have done so far
@@ -227,5 +242,4 @@ for x in stride(from: 0, through: 400, by: 50) {
  ## Template code
  The code below is necessary to see results in the Assistant Editor at right. Please do not remove.
  */
-PlaygroundPage.current.liveView = canvas
-
+PlaygroundPage.current.liveView = canvas 
